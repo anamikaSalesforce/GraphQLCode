@@ -1,0 +1,13 @@
+<template>
+    <Lightning-card title="Contact where account Rating hot">
+             <div class="slds-var-m-horizontal_medium">
+            <template lwc:if={results}>
+                <template for:each={results} for:item="contact">
+                <div key={contact.Id}>
+                    {contact.Name.value}
+                </div>
+                </template>
+            </template>
+            </div> 
+    </Lightning-card>
+    </template>
